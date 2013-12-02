@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ryan on the Web</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui-1.10.3.custom.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="images/rklogo-orange-favicon.png" type="image/png">
+</head>
+
+
+<body>
+	
+	<!-- Header -->
+	<div id="header_container">
+			<div id="logocontainer">
+				<a href="index.html"><img src="images/rklogo-orange.png" id="rklogo"></a>
+			</div>
+	    <div id="work" class="headernav">
+	        Work Time
+	    </div>
+			<div class="gap"></div>
+			<div id="play" class="headernav">
+	        Play Time
+	    </div>
+			<div class="gap"></div>
+	    <div id="contact" class="headernav">
+	        Business Time
+	    </div>
+			<div class="gap"></div>
+	    <div id="dim" class="headernav">
+	        Bed Time
+	    </div>
+	</div>
+
+	<!-- Content -->
+	<div id="contactpage">
+		<h2 id="random" style="font-style:italic; display:inline-block"></h2><h2 id='letstalk' style="font-style:italic; display:inline-block">.  Let's talk.</h2>
+		<div id="icons">
+			<img class="icons" src="images/github.png" usemap="#github" height=40px>
+			<map name="github">
+			  <area shape="circle" coords="20,20,20" href="https://github.com/rkwok92" target="_blank" rel="github">
+			</map>
+			<img class="icons" src="images/email.png" usemap="#email" height=40px>
+			<map name="email">
+			  <area shape="circle" coords="20,20,20" href="mailto:rkwok92@gmail.com?Subject=Impressive%20stuff%20Ryan%2E%2E%2E" rel="email">
+			</map>
+			<img class="icons" src="images/linkedin.png" usemap="#linkedin" height=40px>
+			<map name="linkedin">
+			  <area shape="circle" coords="20,20,20" href="https://www.linkedin.com/pub/ryan-kwok/3b/b46/478/" target="_blank" rel="linkedin">
+			</map>
+			<img class="icons" src="images/instagram.png" usemap="#instagram" height=40px>
+			<map name="instagram">
+			  <area shape="circle" coords="20,20,20" href="https://instagram.com/kwkstr" target="_blank" rel="instagram">
+			</map>
+			<img class="icons" src="images/youtube.png" usemap="#youtube" height=40px>
+			<map name="youtube">
+			  <area shape="circle" coords="20,20,20" href="https://youtube.com/kwkstr" target="_blank" rel="youtube">
+			</map>
+			<img class="icons" src="images/facebook.png" usemap="#facebook" height=40px>
+			<map name="facebook">
+			  <area shape="circle" coords="20,20,20" href="https://facebook.com/rkwok" target="_blank" rel="facebook">
+			</map>
+			<img class="icons" src="images/resume.png" usemap="#resume" height=40px>
+			<map name="resume">
+			  <area shape="circle" coords="20,20,20" href="" target="_blank" rel="resume">
+			</map>
+		</div>
+		<h4 id="last" style="font-style:italic">Or, leave your information below and I'll have my people contact your people.</h4>
+	</div>
+	
+	<!-- js stuff -->
+	<script src="javascripts/jquery-2.0.3.min.js"></script>
+	<script src="javascripts/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script>
+	$(function(){
+	 $("#contact").css("color", "#F8A71A");
+	 $("#contact").css("border-bottom", "solid #F8A71A");
+	 $("#contact").css("border-bottom-width", "2.5px");
+	 $('#random').hide();
+	 $('#letstalk').hide();
+	 $('#icons').hide();
+	 $('#last').hide();
+	 $('#random').fadeIn(600);
+	 $('#letstalk').fadeIn(600);
+	 $('#icons').delay(400).fadeIn(800);	
+	 // $('#last').delay(2500).fadeIn(1000);
+	 
+	 $("#work").hover(function(){
+		 $("#work").css("color", "#F8A71A");
+	 }, function(){
+		 $("#work").css("color", "#FFFFFF");
+	 });
+	 $("#play").hover(function(){
+		 $("#play").css("color", "#F8A71A");
+	 }, function(){
+		 $("#play").css("color", "#FFFFFF");
+	 });
+	 
+		var array = ["I agree", "Sounds good", "Took you long enough", "You're smart", "I like that confidence", "Great idea", "I like your style", "Word", "Never thought you'd ask", "About time", "Dope", "Thank you, sir", "You're the man", "Life is short", "I hear ya"];
+		var number = Math.ceil(Math.random()*array.length-1);
+		$("#random").html(array[number]);
+			 
+		$("#icons area").hover(function(){
+			var media = $(this).attr('rel');
+			$(this).parent().prev().attr("src","images/"+media+"c.png");
+			}, function(){
+			var media = $(this).attr('rel');
+			$(this).parent().prev().attr("src","images/"+media+".png");	
+		});
+	});
+	</script>
+
+</body>
+</html>

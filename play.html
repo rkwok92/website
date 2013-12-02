@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ryan on the Web</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui-1.10.3.custom.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="images/rklogo-orange-favicon.png" type="image/png">
+</head>
+
+
+<body>
+	
+	<!-- Header -->
+	<div id="header_container">
+			<div id="logocontainer">
+				<a href="index.html"><img src="images/rklogo-orange.png" id="rklogo"></a>
+			</div>
+	    <div id="work" class="headernav">
+	        Work Time
+	    </div>
+			<div class="gap"></div>
+	    <div id="play" class="headernav">
+	        Play Time
+	    </div>
+			<div class="gap"></div>
+	    <div id="contact" class="headernav">
+	        Business Time
+	    </div>
+			<div class="gap"></div>
+	    <div id="dim" class="headernav">
+	        Bed Time
+	    </div>
+			
+	</div>
+	
+	<!-- Content -->
+	<div class="leftcontainer">
+		<ul type="none" style="margin-top:0; padding-left:0">
+			<li class="leftnav">
+				<a href="#travel">Travel</a>
+				<div style="font-size:13px">I'm a traveller</div>
+			</li>
+			<li class="leftnav">
+				<a href="#music">Music</a>
+				<div style="font-size:13px">I'm a musician</div>
+			</li>
+			<li class="leftnav">
+				<a href="#rugby">Rugby</a>
+				<div style="font-size:13px">I'm an athlete</div>
+			</li>
+			<li class="leftnav">
+				<a href="#pike">Pi Kappa Alpha</a>
+				<div style="font-size:13px">I'm a Pike</div>
+			</li>
+			<li class="leftnav">
+				<a href="#snowboard">Snowboarding</a>
+				<div style="font-size:13px">I'm a snowboarder</div>
+			</li>
+			<li class="leftnav">
+				<a href="#film">Film</a>
+				<div style="font-size:13px">I like making films</div>
+			</li>
+		</ul>
+	</div>
+	<div class="rightcontainer">
+		<div id="travel">
+		<h2 style="margin-top:0">TRAVEL</h2>
+		<br>
+		Info on this current project...
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</div>
+		<div id="music">
+		<h2>MUSIC</h2>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</div>
+		<div id="rugby">
+		<h2>RUGBY</h2>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</div>
+		<div id="pike">
+		<h2>PI KAPPA ALPHA</h2>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</div>
+		<div id="snowboard">
+		<h2>SNOWBOARDING</h2>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</div>
+		<div id="film">
+		<h2>FILMOGRAPHY</h2>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		more images... and narratives
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		</div>
+	</div>
+	
+	<!-- js stuff -->
+	<script src="javascripts/jquery-2.0.3.min.js"></script>
+	<script src="javascripts/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/jquery.easing.1.3.js"></script>
+	<script src='javascripts/jquery.scrollspy.js'></script>
+	<script>
+		$(function(){
+			 $("#play").css("color", "#F8A71A");
+			 $("#play").css("border-bottom", "solid #F8A71A");
+			 $("#play").css("border-bottom-width", "2.5px");
+	 		 $('.leftcontainer').hide();
+			 $('.rightcontainer').hide();
+			 $('.leftcontainer').delay(100).fadeIn(250);
+			 $('.rightcontainer').delay(400).fadeIn(1000);
+	 		 
+			 
+			 $("#work").hover(function(){
+				 $("#work").css("color", "#F8A71A");
+			 }, function(){
+				 $("#work").css("color", "#FFFFFF");
+			 });
+			 $("#contact").hover(function(){
+				 $("#contact").css("color", "#F8A71A");
+			 }, function(){
+				 $("#contact").css("color", "#FFFFFF");
+			 });
+		});
+	</script>
+
+</body>
+</html>

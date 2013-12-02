@@ -1,0 +1,186 @@
+/*------------------------- variables ------------------------------
+
+font-body: 'Poiret One', cursive;
+font-body: 'Raleway';
+
+gold: #CC9933;
+dark-gray: #CACACA;
+medium-gray: #E8E8E8;
+light-gray: #F5F6F6;
+black: #000000;
+white: #FFFFFF;
+baby-blue: #469CE3
+orange: #F8A71A
+dark-blue: #00294A
+
+//------------------------- CSS -------------------------------
+ 
+/* Body */
+body {
+	font-family: 'Poiret One', cursive;
+	color: #00294A;
+	margin:0; padding:0; 
+	background-color:#FFFFFF; }
+ 
+/* Header */
+#header_container { 
+	font-family: 'Raleway';
+	font-weight: 500;
+	background:#00294A; 
+	border:0px; 
+	display: inline;
+	max-height:60px;
+	left:0; 
+	position:fixed; 
+	width:100%; 
+	top:0; 
+	overflow: visible;
+	color: #FFFFFF;
+	font-size: 100%;
+	z-index: 2000000;
+	}
+	
+#footer { 
+/*	font-family: 'Raleway';
+	font-weight: 500;*/
+	background: #969696; 
+	display: inline;
+ 	height:30px;
+	position: fixed; 
+	width:100%;
+	left:0; 
+	bottom:0; 
+	overflow: visible;
+	color: #00294A;
+	font-size: 100%;
+	z-index: 1000;
+}
+	
+#logocontainer{ 
+	margin:0 auto; 
+	width:auto; 
+	display: inline-block;
+	float: left; 
+	padding-top:5px;
+	margin-left:30%;
+	padding-left:-20px;
+	overflow: visible;
+	height: 60px;}
+	
+#rklogo{ 
+	position:relative;
+	left:-30px;
+	margin:0 auto;
+	padding: 0px 0px 0px 0px;
+	overflow: visible;
+	height: 80px;
+	line-height: 0; 
+}
+
+.gap{
+	min-width:3%;
+	min-height:1px;
+	display: inline-block;
+	float: left; 
+}
+
+.headernav{ 
+	padding-top:24px;
+	padding-left:0%;
+	padding-bottom:4px;
+	margin:0 auto; 
+	width: auto; 
+	display: inline-block;
+	float: left; 
+	cursor:pointer;
+}
+
+#work{ 
+	padding-left:0;
+}
+ 
+/* Content */
+		
+#mainpage{ 
+	margin-top:10%;
+	margin-left:15%;
+	width:70%;
+	text-align:center;
+	background-image:url('../images/profile9.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+h2 {
+	margin-top:0px;
+	margin-bottom:20px;
+}
+
+#contactpage{ 
+	margin-top:10%;
+	margin-left:15%;
+	width:70%;
+	text-align:center;
+}
+
+.map{
+	display: inline-block;
+	width: 45px;
+	height: 338px;
+}
+
+.leftcontainer{ 
+	position: fixed;
+	margin-top:100px;
+	margin-left:11%;
+	width:20%;
+	text-align:right;
+	vertical-align:top;
+	display: inline-block;
+}
+
+#horizontal-bar{
+	position: absolute;
+	top: 0;
+	right:0;
+	float: right;
+	border-right: solid #F8A71A;
+	border-right-width: 3px;
+	padding-right: 0;
+	height: 33px;
+	transition:all .3s;
+	-webkit-transition:all .3s;
+	-ms-transition:all .3s;
+	-o-transition:all .3s;
+/*	transition-delay: 0.05s;*/
+}
+
+.leftnav{
+	margin-bottom:13px;
+	padding-right:10px;
+	border-right-width: 3px;
+	opacity:0.5;
+}
+
+.rightcontainer{ 
+	padding-top:100px;
+	margin-left:31%;
+	padding-left:12px;
+	width:55%;
+	text-align:left;
+	vertical-align:top;
+	display: inline-block;
+	overflow-x: scroll;
+	word-wrap: normal;
+}
+
+#icons{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.icons{ 
+	padding-right:10px;
+	padding-left:10px;
+	color:#F8A71A;
+}

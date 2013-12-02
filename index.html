@@ -1,47 +1,81 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ryan on the Web</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui-1.10.3.custom.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="images/rklogo-orange-favicon.png" type="image/png">
+</head>
 
-	<!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 40px;
-        padding-bottom: 60px;
-      }
 
-      /* Custom container */
-      .container {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
-      .container > hr {
-        margin: 60px 0;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 80px 0;
-        text-align: center;
-      }
-	</style>
-    
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    
-	<title>A peek into Ryan's life</title>
+<body>
 	
-    </head>
-	
-    <div class="jumbotron">
-      <p class="lead"></p>
-
-        <a href="">
-        	<img src="images/rklogo.png"
-  			width="300" usemap="#Hexagon" border="0" />
-		</a>
-        <h1>Sorry, undergoing a makeover - will be back soon!</h1>
+	<!-- Header -->
+	<div id="header_container">
+			<div id="logocontainer">
+				<a href="index.html"><img src="images/rklogo-orange.png" id="rklogo"></a>
+			</div>
+	    <div id="work" class="headernav">
+	        Work Time
+	    </div>
+			<div class="gap"></div>
+			<div id="play" class="headernav">
+	        Play Time
+	    </div>
+			<div class="gap"></div>
+	    <div id="contact" class="headernav">
+	        <a>Business Time</a>
+	    </div>
+			<div class="gap"></div>
+	    <div id="dim" class="headernav">
+	        Bed Time
+	    </div>
 	</div>
-    
-</html>
 
+	<!-- Content -->
+	<div id="mainpage">
+			<div id="1" class="map"></div>
+			<div id="2" class="map"></div>
+			<div id="3" class="map"></div>
+			<div id="4" class="map"></div>
+			<div id="5" class="map"></div>
+			<div id="6" class="map"></div>
+			<div id="7" class="map"></div>
+			<div id="8" class="map"></div>
+			<div id="9" class="map"></div>
+	</div>
+	
+	<!-- js stuff -->
+	<script src="javascripts/jquery-2.0.3.min.js"></script>
+	<script src="javascripts/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script src='javascripts/jquery.scrollspy.js'></script>
+	<script>
+		$(function(){
+			$('#header_container').hide();
+			$('#mainpage').hide();
+			$('#header_container').fadeIn(800);
+			$('#mainpage').delay(500).fadeIn(1200);
+	 	});
+	
+		 $("#work").hover(function(){
+			 $("#work").css("color", "#F8A71A");
+		 }, function(){
+			 $("#work").css("color", "#FFFFFF");
+		 });
+		 $("#play").hover(function(){
+			 $("#play").css("color", "#F8A71A");
+		 }, function(){
+			 $("#play").css("color", "#FFFFFF");
+		 });
+		 $("#contact").hover(function(){
+			 $("#contact").css("color", "#F8A71A");
+		 }, function(){
+			 $("#contact").css("color", "#FFFFFF");
+		 });
+
+	</script>
+</body>
+</html>
