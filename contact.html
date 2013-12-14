@@ -2,8 +2,10 @@
 <html>
 <head>
   <title>Ryan on the Web</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/mobile.css" media="(max-width:980px)" />
+	
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="images/rklogo-orange-favicon.png" type="image/png">
@@ -26,17 +28,15 @@
 	    </div>
 			<div class="gap"></div>
 	    <div id="contact" class="headernav">
-	        Business Time
+	        <a>Business Time</a>
 	    </div>
 			<div class="gap"></div>
-	    <div id="dim" class="headernav">
-	        Bed Time
-	    </div>
 	</div>
+	
 
 	<!-- Content -->
 	<div id="contactpage">
-		<h2 id="random" style="font-style:italic; display:inline-block"></h2><h2 id='letstalk' style="font-style:italic; display:inline-block">.  Let's talk.</h2>
+		<h2 id="random" style="font-style:italic; display:inline-block; color:#00294A;"></h2><h2 id='letstalk' style="font-style:italic; display:inline-block; color:#00294A;">.  Let's talk.</h2>
 		<div id="icons">
 			<img class="icons" src="images/github.png" usemap="#github" height=40px>
 			<map name="github">
@@ -64,58 +64,39 @@
 			</map>
 			<img class="icons" src="images/resume.png" usemap="#resume" height=40px>
 			<map name="resume">
-			  <area shape="circle" coords="20,20,20" href="" target="_blank" rel="resume">
+			  <area shape="circle" coords="20,20,20" href="Ryan_Kwok_resume.pdf" target="_blank" rel="resume" download>
 			</map>
 		</div>
-		<h4 id="last" style="font-style:italic">Or, leave your information below and I'll have my people contact your people.</h4>
+		<!-- <div id="last">
+			<h3 style="font-style:italic">Or, leave your info and I'll have my people contact your people.</h3>
+		  <form id="messageForm" action="/messages/insert" style="align:left;">
+		    <div class="row">
+		      <label>Name:</label><input id="name-input" name="name" type="text"/> 
+		    </div>
+		    <div class="row">
+		      <label>Email/number:</label> <input id="contact-input" name="email" type="text"/>
+		    </div>
+		    <div class="row" style="height:100px;">
+		      <label>Message:</label>  <textarea id="message-input" form="messageForm" name="message" type="text" style="height:100px;"></textarea>
+		    </div>
+		    <div class="row">
+		      <button id="submitMessage" name="Submit" style="width:60px;">Submit</button>
+		    </div>
+		  </form>
+		</div>
+	</div> -->
+	
+	<!-- Footer -->
+	<div id="footer">
+		&copy; <a href="mailto:rkwok92@gmail.com?Subject=Impressive%20stuff%20Ryan%2E%2E%2E">Ryan Kwok</a> 2013
 	</div>
 	
-	<div id="footer">
-	&copy; <a href="mailto:rkwok92@gmail.com?Subject=Impressive%20stuff%20Ryan%2E%2E%2E">Ryan Kwok</a> 2013
-	</div>
 	
 	<!-- js stuff -->
 	<script src="javascripts/jquery-2.0.3.min.js"></script>
 	<script src="javascripts/jquery-ui-1.10.3.custom.min.js"></script>
 	<script src="javascripts/app.js"></script>
-	<script>
-	$(function(){
-	 $("#contact").css("color", "#F8A71A");
-	 $("#contact").css("border-bottom", "solid #F8A71A");
-	 $("#contact").css("border-bottom-width", "2.5px");
-	 $('#random').hide();
-	 $('#letstalk').hide();
-	 $('#icons').hide();
-	 $('#last').hide();
-	 $('#random').fadeIn(600);
-	 $('#letstalk').fadeIn(600);
-	 $('#icons').delay(400).fadeIn(800);	
-	 // $('#last').delay(2500).fadeIn(1000);
-	 
-	 $("#work").hover(function(){
-		 $("#work").css("color", "#F8A71A");
-	 }, function(){
-		 $("#work").css("color", "#FFFFFF");
-	 });
-	 $("#play").hover(function(){
-		 $("#play").css("color", "#F8A71A");
-	 }, function(){
-		 $("#play").css("color", "#FFFFFF");
-	 });
-	 
-		var array = ["I agree", "Sounds good", "Took you long enough", "Yes", "I like that confidence", "Great idea", "I like your style", "Word", "Never thought you'd ask", "About time", "Dope", "Thank you, sir", "You're the man", "I hear ya"];
-		var number = Math.ceil(Math.random()*array.length-1);
-		$("#random").html(array[number]);
-			 
-		$("#icons area").hover(function(){
-			var media = $(this).attr('rel');
-			$(this).parent().prev().attr("src","images/"+media+"c.png");
-			}, function(){
-			var media = $(this).attr('rel');
-			$(this).parent().prev().attr("src","images/"+media+".png");	
-		});
-	});
-	</script>
+	<script src="javascripts/contact.js"></script>
 
 </body>
 </html>
