@@ -6,46 +6,57 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui-1.10.3.custom.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="images/rklogo-orange-favicon.png" type="image/png">
 </head>
 
 
 <body>
-	
+	<div class="container">
 	<!-- Header -->
-	<div id="header_container">
-			<div id="logocontainer">
-				<a href="index.html"><img src="images/rklogo-orange.png" id="rklogo"></a>
-			</div>
-	    <div id="work" class="headernav">
-	        Work Time
-	    </div>
-			<div class="gap"></div>
-			<div id="play" class="headernav">
-	        Play Time
-	    </div>
-			<div class="gap"></div>
-	    <div id="contact" class="headernav">
-	        <a>Business Time</a>
-	    </div>
-			<div class="gap"></div>
-	    <div id="dim" class="headernav">
-	        Bed Time
-	    </div>
-	</div>
+	
+		<div id="header_container">
+				<div id="logocontainer">
+					<a href="index.html"><img src="images/rklogo-orange.png" id="rklogo"></a>
+				</div>
+		    <div id="work" class="headernav">
+		        Work Time
+		    </div>
+				<div class="gap"></div>
+				<div id="play" class="headernav">
+		        Play Time
+		    </div>
+				<div class="gap"></div>
+		    <div id="contact" class="headernav">
+		        <a>Business Time</a>
+		    </div>
+				<div class="gap"></div>
+		    <div id="dim" class="headernav">
+		        Bed Time
+		    </div>
+		</div>
 
 	<!-- Content -->
-	<div id="mainpage">
-			<div id="1" class="map"></div>
-			<div id="2" class="map"></div>
-			<div id="3" class="map"></div>
-			<div id="4" class="map"></div>
-			<div id="5" class="map"></div>
-			<div id="6" class="map"></div>
-			<div id="7" class="map"></div>
-			<div id="8" class="map"></div>
-			<div id="9" class="map"></div>
-	</div>
+	
+		<div id="mainpage">
+				<div id="1" class="map"></div>
+				<div id="2" class="map"></div>
+				<div id="3" class="map"></div>
+				<div id="4" class="map"></div>
+				<div id="5" class="map"></div>
+				<div id="6" class="map"></div>
+				<div id="7" class="map"></div>
+				<div id="8" class="map"></div>
+				<div id="9" class="map"></div>
+		</div>
+		<div id="introduction">
+			Welcome! 
+		</div>
+		<div id="footer">
+			&copy; <a href="mailto:rkwok92@gmail.com?Subject=Impressive%20stuff%20Ryan%2E%2E%2E">Ryan Kwok</a> 2013
+		</div>
+	</div> 
+	
 	
 	<!-- js stuff -->
 	<script src="javascripts/jquery-2.0.3.min.js"></script>
@@ -55,9 +66,13 @@
 	<script>
 		$(function(){
 			$('#header_container').hide();
-			$('#mainpage').hide();
+			$('#mainpage').hide()
+			$('#introduction').hide()
+			$('#footer').hide()
 			$('#header_container').fadeIn(800);
-			$('#mainpage').delay(500).fadeIn(1200);
+			$('#footer').fadeIn(800);
+			$('#mainpage').delay(500).fadeIn(800);
+			$('#introduction').delay(1000).fadeIn(500);
 	 	});
 	
 		 $("#work").hover(function(){

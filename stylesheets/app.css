@@ -2,6 +2,7 @@
 
 font-body: 'Poiret One', cursive;
 font-body: 'Raleway';
+font-family: 'Architects Daugher';
 
 gold: #CC9933;
 dark-gray: #CACACA;
@@ -20,8 +21,14 @@ body {
 	font-family: 'Poiret One', cursive;
 	color: #00294A;
 	margin:0; padding:0; 
-	background-color:#FFFFFF; }
+	background-color:#FFFFFF; 
+}
  
+.container {
+   height:100%;
+   position:relative;
+}
+
 /* Header */
 #header_container { 
 	font-family: 'Raleway';
@@ -41,18 +48,15 @@ body {
 	}
 	
 #footer { 
-/*	font-family: 'Raleway';
-	font-weight: 500;*/
-	background: #969696; 
-	display: inline;
- 	height:30px;
+	background-color: #FFFFFF;
+	text-align:center;
 	position: fixed; 
 	width:100%;
-	left:0; 
 	bottom:0; 
-	overflow: visible;
+	padding-top:8px;
+	padding-bottom:10px;
 	color: #00294A;
-	font-size: 100%;
+	font-size: 80%;
 	z-index: 1000;
 }
 	
@@ -102,7 +106,7 @@ body {
 /* Content */
 		
 #mainpage{ 
-	margin-top:10%;
+	margin-top:8%;
 	margin-left:15%;
 	width:70%;
 	text-align:center;
@@ -110,6 +114,16 @@ body {
 	background-position:center;
 	background-repeat:no-repeat;
 }
+
+#introduction {
+	margin-left:15%;
+	margin-bottom:50px;
+	width:70%;
+	text-align:center;
+	font-family: 'Architects Daughter', cursive;
+	padding-top:30px;
+	font-size: 120%;
+} 
 
 h2 {
 	margin-top:0px;
