@@ -22,7 +22,10 @@ $(document).ready(function() {
 	 $("#play").css("color", "#FFFFFF");
  });
  
-	var array = ["I agree", "Sounds good", "Took you long enough", "You're smart", "I like that confidence", "Great idea", "I like your style", "Word", "Never thought you'd ask", "About time", "Dope", "Thank you, sir", "You're the man", "Life is short", "I hear ya"];
+	var array = ["I agree", "Sounds good", "Took you long enough", "You're smart", 
+	"I like that confidence", "Great idea", "I like your style", "I like your style", "I like your style", 
+	"Word", "Never thought you'd ask", "About time", "Dope", "Thank you, sir", "You're the man", 
+	"Life is short", "I hear ya", "Why didn't we do this earlier.."];
 	var number = Math.ceil(Math.random()*array.length-1);
 	$("#random").html(array[number]);
 		 
