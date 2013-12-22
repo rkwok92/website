@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(window).load(function() {
+	$(document).ready(function() {
 		$('h2').each(function(i) {
 			var position = $(this).parent().position();
 			position.top -= 100;
@@ -50,4 +51,5 @@ $(document).ready(function() {
  }, function(){
 	 $("#contact").css("color", "#FFFFFF");
  });
+});
 });

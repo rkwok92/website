@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(window).load(function() {
+	$(document).ready(function() {
 	$(function(){
 		$('#header_container').hide();
 		$('#mainpage').hide();
@@ -50,4 +51,5 @@ $(document).ready(function() {
   };
 	window.onload = pageVisit;
 
+});
 });

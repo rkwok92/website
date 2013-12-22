@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(window).load(function() {
+	$(document).ready(function() {
  $("#contact").css("color", "#F8A71A");
  $("#contact").css("border-bottom", "solid #F8A71A");
  $("#contact").css("border-bottom-width", "2.5px");
@@ -36,4 +37,5 @@ $(document).ready(function() {
 		var media = $(this).attr('rel');
 		$(this).parent().prev().attr("src","images/"+media+".png");	
 	});
+});
 });

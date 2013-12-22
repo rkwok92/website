@@ -22,7 +22,8 @@ body {
 	font-family: 'Poiret One', cursive;
 	color: #00294A;
 	margin:0; padding:0; 
-	background-color:#FFFFFF; }
+	/*background-image:url('../images/brushed.png');*/
+	background-color:#FFFFFF;}
 	
 .text {
 	font-family: 'Alegreya Sans', sans-serif;
