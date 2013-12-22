@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function() {
 		//logo
    $("#rklogo").mouseenter(function() {
          $(this).effect("bounce", { times:6 , distance:10}, 1000);

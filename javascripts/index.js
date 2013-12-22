@@ -1,4 +1,4 @@
-$(window).load(function() {
+
 	$(document).ready(function() {
 	$(function(){
 		$('#header_container').hide();
@@ -51,5 +51,4 @@ $(window).load(function() {
   };
 	window.onload = pageVisit;
 
-});
 });
