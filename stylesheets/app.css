@@ -118,12 +118,14 @@ body {
 }
 
 #mainpage{ 
-	margin-top:8%;
+	margin-top:35vh;
 	margin-left:15%;
-	padding-top:-50px;
 	width:70%;
 	text-align:center;
-	position: relative;
+}
+
+#rklogotemp{ 
+	height: 100px;
 }
 
 #profileImage{ 
